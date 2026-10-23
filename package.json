@@ -1,0 +1,17 @@
+{
+  "name": "localhub-x",
+  "version": "1.0.0",
+  "description": "LocalHub X — Production-Oriented Local Super-App for Deori Taluka, Maharashtra",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,cyan\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build:client": "npm run build --prefix client",
+    "build": "npm run build:client",
+    "test:server": "npm run test --prefix server",
+    "test:all": "npm run test:all --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

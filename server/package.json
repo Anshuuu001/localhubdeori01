@@ -1,0 +1,32 @@
+{
+  "name": "localhub-x-server",
+  "version": "1.0.0",
+  "description": "Backend REST API for LocalHub X",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "migrate": "node src/db/migrate.js",
+    "test": "node src/tests/activity_phase4.test.js",
+    "test:health": "node src/tests/health.test.js",
+    "test:phase2": "node src/tests/auth_phase2.test.js",
+    "test:phase3": "node src/tests/marketplace_phase3.test.js",
+    "test:phase4": "node src/tests/activity_phase4.test.js",
+    "test:phase5": "node src/tests/civic_phase5.test.js",
+    "test:phase6": "node src/tests/admin_phase6.test.js",
+    "test:phase7": "node src/tests/search_phase7.test.js",
+    "test:search": "node src/tests/search_phase7.test.js",
+    "test:all": "node src/tests/auth_phase2.test.js && node src/tests/marketplace_phase3.test.js && node src/tests/activity_phase4.test.js && node src/tests/civic_phase5.test.js && node src/tests/admin_phase6.test.js && node src/tests/search_phase7.test.js"
+  },
+
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "multer": "^2.4.0",
+    "mysql2": "^3.12.0"
+  }
+}
